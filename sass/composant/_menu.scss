@@ -1,15 +1,20 @@
 //.menu
 .menu{ //ul
 
-&__li{//l 
+&__ul{//l 
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  gap: 3px 0;
+  gap: 10px 0;
   margin: 3px 0;
-  a{//a
-    padding: 4px;
-
+  @media screen and (max-width :800px) {
+    flex-direction: column
   }
+  .menu_li, a {//a
+    padding: 4px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  
 }
 }
