@@ -56,17 +56,35 @@ p {
 /* /////////////////////////////////
 Les composants
 //////////////////////////////////// */
-.menu {
-  background-color: black;
+.menu__li {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 3px 0;
+  margin: 3px 0;
 }
-.menu ul {
-  margin: 0;
-  padding: 0;
-}
-.menu li {
-  display: inline-block;
+.menu__li a {
+  padding: 4px;
 }
 
+.recherche {
+  display: flex;
+  width: 12rem;
+}
+.recherche__input {
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.01);
+  flex: 1 0 auto;
+  padding: 3px;
+}
+.recherche__input:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.recherche__input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-style: italic;
+}
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
@@ -78,6 +96,12 @@ Les layouts
 .entete {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.entete__navigation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero {
