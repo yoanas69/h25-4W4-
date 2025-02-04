@@ -91,6 +91,10 @@ Les composants
 .recherche__input:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
+.recherche__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-style: italic;
+}
 .recherche__input::placeholder {
   color: rgba(0, 0, 0, 0.2);
   font-style: italic;
@@ -157,10 +161,20 @@ main {
   display: flex;
   min-width: 50vw;
   justify-content: space-around;
-  align-items: flex-end;
+  background-color: white;
+  box-shadow: 3px 3px 5px gray;
+  align-items: center;
+  min-height: 10vh;
+  z-index: 2;
+  position: relative;
+  bottom: 3vh;
+  gap: 14px;
 }
 .galerie__incription h3 {
   min-width: 100%;
+}
+.galerie__detail h3 {
+  margin: 1px 1px;
 }
 
 .hero {

@@ -15,12 +15,18 @@
   
         }
         &__inscription{
-            display: flex;
+            display: flex
+            ;
                 min-width: 50vw;
                 justify-content: space-around;
-               background-color: white;
+                background-color: white;
                 box-shadow: 3px 3px 5px gray;
                 align-items: center;
+                min-height: 10v;
+                z-index: 2;
+                position: relative;
+                bottom: 3vh;
+                gap: 14px;
         }
         &__incription h3{
             min-width: 100%;
