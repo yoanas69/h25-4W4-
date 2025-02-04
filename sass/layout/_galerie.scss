@@ -33,8 +33,13 @@
         }
         &__detail{
             margin: 0px 10px;
+            text-transform: capitalize;
         }
         &__detail h3{
             margin: 1px 1px;
+        }
+        &__form{
+            box-shadow: 0px 0px 0px 2px #10f0df;
+            text-transform: capitalize;
         }
 }
