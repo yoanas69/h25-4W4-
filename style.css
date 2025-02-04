@@ -173,6 +173,9 @@ main {
 .galerie__incription h3 {
   min-width: 100%;
 }
+.galerie__detail {
+  margin: 0px 10px;
+}
 .galerie__detail h3 {
   margin: 1px 1px;
 }

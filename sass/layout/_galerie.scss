@@ -22,7 +22,7 @@
                 background-color: white;
                 box-shadow: 3px 3px 5px gray;
                 align-items: center;
-                min-height: 10v;
+                min-height: 10vh;
                 z-index: 2;
                 position: relative;
                 bottom: 3vh;
@@ -30,6 +30,9 @@
         }
         &__incription h3{
             min-width: 100%;
+        }
+        &__detail{
+            margin: 0px 10px;
         }
         &__detail h3{
             margin: 1px 1px;
