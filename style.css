@@ -58,10 +58,11 @@ Les composants
 //////////////////////////////////// */
 .menu__ul {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   list-style-type: none;
-  gap: 10px 0;
-  margin: 3px 0;
+  gap: 35px;
+  margin: 3px 36px;
+  font-size: 1.3rem;
 }
 @media screen and (max-width: 800px) {
   .menu__ul {
@@ -72,6 +73,8 @@ Les composants
   padding: 4px;
   list-style-type: none;
   text-decoration: none;
+  color: #888383;
+  text-transform: uppercase;
 }
 
 .recherche {
@@ -100,10 +103,21 @@ Les layouts
   padding: 10vh 5vw;
 }
 
+main {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .entete {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(128, 128, 128, 0.2509803922);
+}
+.entete__span {
+  font-size: 50px;
 }
 .entete__navigation {
   display: flex;
@@ -121,8 +135,47 @@ Les layouts
     flex-direction: column;
   }
 }
+.entete__menu {
+  display: flex;
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100vw;
+}
+.galerie__img {
+  width: 100%;
+}
+.galerie__figure {
+  max-width: 17VW;
+  display: flex;
+  margin: 5px 5px;
+}
+.galerie__inscription {
+  display: flex;
+  min-width: 50vw;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.galerie__incription h3 {
+  min-width: 100%;
+}
 
 .hero {
   background-image: url("images/maldives.jpg");
   min-height: 100vh;
+  background-size: cover;
+}
+.hero__inscrire {
+  background-color: rgba(128, 128, 128, 0.79);
+  border-radius: 6px;
+  max-width: 102px;
+  min-height: 33px;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

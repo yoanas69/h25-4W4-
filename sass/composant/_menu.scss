@@ -2,11 +2,14 @@
 .menu{ //ul
 
 &__ul{//l 
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  gap: 10px 0;
-  margin: 3px 0;
+  display: flex
+  ;
+      /* flex-direction: row; */
+      list-style-type: none;
+      gap: 35px;
+      margin: 3px 36px;
+      font-size: 1.3rem;
+  
   @media screen and (max-width :800px) {
     flex-direction: column
   }
@@ -14,6 +17,8 @@
     padding: 4px;
     list-style-type: none;
     text-decoration: none;
+    color:#888383;
+    text-transform: uppercase;
   }
   
 }
