@@ -16,9 +16,11 @@
         }
         &__inscription{
             display: flex;
-            min-width: 50vw;
-            justify-content: space-around;
-            align-items: flex-end;
+                min-width: 50vw;
+                justify-content: space-around;
+               background-color: white;
+                box-shadow: 3px 3px 5px gray;
+                align-items: center;
         }
         &__incription h3{
             min-width: 100%;
