@@ -9,9 +9,10 @@
       gap: 35px;
       margin: 3px 36px;
       font-size: 1.3rem;
-  
+    
   @media screen and (max-width :800px) {
-    flex-direction: column
+    flex-direction: column;
+    
   }
   .menu_li, a {//a
     padding: 4px;
