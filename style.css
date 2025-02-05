@@ -167,6 +167,9 @@ main {
   height: 4px;
   background-color: black;
 }
+.entete__burger {
+  z-index: 1;
+}
 
 .galerie {
   display: flex;
