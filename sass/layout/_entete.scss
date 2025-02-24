@@ -16,12 +16,12 @@
         background-color: transparent;
         @media screen and (max-width:800px) {
             position: absolute;
-            top: 0;
+            top: 120px;
             right: 0;
             background-color: white;
             padding: 20px;
             flex-direction: column;
-            translate: 100%;
+            translate: 100% ;
             width: 100vw;
             transition: translate 1s;
         }

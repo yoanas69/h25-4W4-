@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------- layout du pied de page*/
+footer{
+    background-color: red;
+    color: black;
+}
+
+.piedpage{
+display: flex;
+flex-direction: column;
+min-width: 100%;
+
+&__s1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    @media screen and (max-width:800px){
+        flex-direction: column-reverse;
+    }
+    &__externe{
+        flex: 0 0 20%;
+    
+        & .menu{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__adresse{
+        flex: 0 0 40%;
+        &__coord{}
+        &__recherche{}
+    }
+    &__description{
+        flex: 1 0 400px;
+    }
+}
+}

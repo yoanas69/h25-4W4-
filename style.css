@@ -56,24 +56,28 @@ p {
 /* /////////////////////////////////
 Les composants
 //////////////////////////////////// */
-.menu__ul {
+.menu {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   list-style-type: none;
-  gap: 35px;
-  margin: 3px 36px;
-  font-size: 1.3rem;
 }
 @media screen and (max-width: 800px) {
-  .menu__ul {
+  .menu {
     flex-direction: column;
   }
 }
-.menu__ul .menu_li, .menu__ul a {
+.menu-item {
   padding: 4px;
   list-style-type: none;
   text-decoration: none;
-  color: #888383;
+  color: #595252;
+  text-transform: uppercase;
+}
+.menu-item a {
+  padding: 4px;
+  list-style-type: none;
+  text-decoration: none;
+  color: #595252;
   text-transform: uppercase;
 }
 
@@ -94,6 +98,20 @@ Les composants
 .recherche__input::placeholder {
   color: rgba(0, 0, 0, 0.2);
   font-style: italic;
+}
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carte--grande {
+  flex: 1 1 250px;
+}
+.carte__image img {
+  width: 100%;
+}
+.carte__contenu {
+  background-color: aliceblue;
 }
 /* /////////////////////////////////
 Les layouts
@@ -128,7 +146,7 @@ main {
 @media screen and (max-width: 800px) {
   .entete__navigation {
     position: absolute;
-    top: 0;
+    top: 120px;
     right: 0;
     background-color: white;
     padding: 20px;
@@ -228,4 +246,39 @@ main {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------- layout du pied de page*/
+footer {
+  background-color: red;
+  color: black;
+}
+
+.piedpage {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+}
+.piedpage__s1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+@media screen and (max-width: 800px) {
+  .piedpage__s1 {
+    flex-direction: column-reverse;
+  }
+}
+.piedpage__s1__externe {
+  flex: 0 0 20%;
+}
+.piedpage__s1__externe .menu {
+  display: flex;
+  flex-direction: column;
+}
+.piedpage__s1__adresse {
+  flex: 0 0 40%;
+}
+.piedpage__s1__description {
+  flex: 1 0 400px;
 }/*# sourceMappingURL=style.css.map */
