@@ -13,6 +13,8 @@ min-width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
+    justify-content: center;
+
     @media screen and (max-width:800px){
         flex-direction: column-reverse;
     }
@@ -30,7 +32,7 @@ min-width: 100%;
         &__recherche{}
     }
     &__description{
-        flex: 1 0 400px;
+        max-width: 500px;
     }
 }
 }
