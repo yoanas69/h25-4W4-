@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<h1>-------- FRONT-PAGE.PHP ----------</h1>
+
 <section class="hero">
     
         <div class="hero__contenu global">
@@ -28,6 +28,7 @@
     </section>
     <main>
         <div class="galerie__inscription">
+            <div class="galerie__composition">
             <div class="galerie__detail" >
                 <h3>
                     nom
@@ -61,15 +62,11 @@
                </form>
             </div>
             <div class="galerie__detail" >
-                <h3>
-                    .
-                </h3>
-               <form class="galerie__form">
-                <input  placeholder="s'incrire" class="galerie__input">
-               </form>
+             <button class="galerie__form">s'inscrire</button>
             </div>
         </div>
-        <div class="galerie global">
+        </div>
+        <!-- <div class="galerie global"> -->
             <figure class="galerie__figure">
                 <img src="images/1.jpg" alt="" class="galerie__img">
             </figure>
@@ -103,7 +100,7 @@
             
         </div>
         <section class="populaire">
-        <div class="global">
+        <div class="global populaire__carte">
             <?php if (have_posts()) : while (have_posts()) : the_post(); 
             if (in_category("galerie"))  {
                 the_content() ;
