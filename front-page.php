@@ -1,4 +1,5 @@
 <?php get_header() ?>
+<h1>-------- FRONT-PAGE.PHP ----------</h1>
 <section class="hero">
     
         <div class="hero__contenu global">
@@ -104,13 +105,10 @@
         <section class="populaire">
         <div class="global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); 
-            if (in_category("galerie")) {
-                the_content();
-            } else {?>
-            <article>
-                <h2><?php the_title(); ?></h2>
-                <div><?php echo wp_trim_words(get_the_content(),10, " ... " ); ?></div>
-            </article>
+            if (in_category("galerie"))  {
+                the_content() ;
+            } else {    ?>
+                <?php get_template_part( 'gabarit/carte' ); ?>
             <?php } ?>
             <?php endwhile; endif; ?>
         </div>
