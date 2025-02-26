@@ -16,7 +16,7 @@
                 <span class="entete__span">&#9819;</span>
                  <?php if (function_exists('the_custom_logo')) {
                 the_custom_logo();
-            }; ?>
+            } ?>
             </figure>
            
             <div class="entete__burger">

@@ -31,7 +31,7 @@
         min-height: 10vh;
         z-index: 2;
         position: relative;
-        bottom: 8vh;
+        bottom: 5vh;
         gap: 14px;
         border-radius: 3px 62px;
     }
@@ -53,7 +53,12 @@
         box-shadow: 0px 0px 0px 2px #10f0df;
         text-transform: capitalize;
     }
-
+    &__button{
+        background-color: #0062ff33;
+    }
+    &__button:hover{
+        background-color: #0062ffde;
+    }
 }
 
 .populaire__carte {

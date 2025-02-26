@@ -1,7 +1,7 @@
 <?php get_header() ?>
 
 <section class="hero">
-    
+<h1>-------- FRONMT---------</h1>
         <div class="hero__contenu global">
             <h1 class="hero__titre">Club de voyage</h1>
             <p class="hero__description">
@@ -57,12 +57,12 @@
                 <h3>
                    telphone
                 </h3>
-               <form class="galerie__form">
+               <form class="galerie__form ">
                 <input type="search" placeholder="ecrire telphone" class="galerie__input">
                </form>
             </div>
             <div class="galerie__detail" >
-             <button class="galerie__form">s'inscrire</button>
+             <button class="galerie__form galerie__button">s'inscrire</button>
             </div>
         </div>
         </div>

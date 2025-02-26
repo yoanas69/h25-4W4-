@@ -1,7 +1,7 @@
 .hero{
     background-image: url("images/maldives.jpg");
     min-height: 100vh;
-   background-repeat: no-repeat;
+   background-size: cover;
     &__inscrire{
         background-color: rgb(128 128 128 / 79%);
         border-radius: 6px;
