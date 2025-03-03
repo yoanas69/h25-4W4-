@@ -7,6 +7,10 @@
     &__composition {
         display: flex;
         align-items: flex-end;
+        @media screen and (max-width:800px) {
+            flex-direction: column;
+            gap: 10px;
+         }
     }
 
     &__img {
@@ -32,8 +36,11 @@
         z-index: 2;
         position: relative;
         bottom: 5vh;
-        gap: 14px;
         border-radius: 3px 62px;
+        @media screen and (max-width:800px) {
+            min-height: 20vh;
+         }
+
     }
 
     &__incription h3 {
@@ -52,6 +59,12 @@
     &__form {
         box-shadow: 0px 0px 0px 2px #10f0df;
         text-transform: capitalize;
+        input{
+            max-width: 15vw;
+            @media screen and (max-width:800px) {
+               max-width: 100%;
+             }
+        }
     }
     &__button{
         background-color: #0062ff33;
