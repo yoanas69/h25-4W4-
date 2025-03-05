@@ -6,7 +6,7 @@
 <!-- 
     // if(has_post_thumbnail()){
     //   get_the_post_thumbnail('medium');} 
--->
+  -->
 <article class="carte carte--grande"> 
   <div class="carte__contenu"> 
     <figure>
