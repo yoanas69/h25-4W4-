@@ -1,10 +1,10 @@
-
-
+/*----------------------- CARTE.SCSS-----------------------------*/
 .carte {
     display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #457dac45;
+  border-radius: 30px 30px 0px 0px;
     &--grande {
         flex: 1 1 250px ;
     }
@@ -26,6 +26,14 @@
         min-height: 100%;
         justify-content: space-between;
         gap: 4px;
+        border-radius: 30px 30px 0px 0px;
+        figure{
+            img{
+                object-fit: cover;
+                width: 100%;
+                border-radius: 30px 30px 0px 0px;
+            }
+        }
     }
     &__titre{
        
