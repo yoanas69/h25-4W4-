@@ -1,6 +1,5 @@
-Exercise #1
+club de voyage
 autheur: yoan assan
-La Réalisation de ce prototype représente une première étape pour la conception 'dun thème WordPress.
+avancement du tp1 club voyage.
 #### GitHub-Page : https://yoanas69.github.io/h25-4W4-/
 #### WHC : https://gftnth00.mywhc.ca/4w4_02
-peut pas cree une page git hub
