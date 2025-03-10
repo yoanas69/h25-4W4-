@@ -23,7 +23,8 @@
         <?php
         $categories = get_the_category();
         if ($categories) {
-          foreach ($categories as $category) {
+          foreach ($categories as $category)
+          if ($category ->name != "galerie") {
             echo '<li><a href="' . esc_url(get_category_link($category->term_id)) . '" rel="category tag">' . esc_html($category->name) . '</a></li>';
           }
         }
