@@ -144,6 +144,22 @@ Les composants
   flex-direction: column;
   /* overflow: hidden; */
   transition: translate 1s ease;
+  align-items: center;
+}
+.carte__contenu a {
+  text-decoration: none;
+  color: rgba(31, 52, 68, 0.9215686275);
+}
+.carte__contenu .post-categories {
+  background-color: rgba(232, 250, 253, 0.6509803922);
+  width: 5vw;
+  border-radius: 30px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: inherit;
 }
 .galerie {
   display: flex;
@@ -242,7 +258,7 @@ main {
 
 .populaire .global {
   display: flex;
-  gap: 20px;
+  gap: 35px;
   flex-direction: row;
   min-width: 90vw;
   flex-wrap: wrap;
