@@ -1,4 +1,4 @@
-<?php
+<?php 
 $functions_dir = get_template_directory() . '/functions/';
 
 // Liste des fichiers à inclure
@@ -11,4 +11,5 @@ $function_files = array(
 foreach ($function_files as $file) {
     include_once $functions_dir . $file;
 }
+; ?>
 
