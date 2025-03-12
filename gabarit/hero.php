@@ -7,7 +7,7 @@
       $hero_background = get_theme_mod('hero_background', ''); ?>
 <section class="hero" style="background-image: url(<?= $hero_background ?>);">
 
-        <div class="hero__contenu global">
+        <div class="hero__contenu global" style="color : <?= $hero_icone; ?>">
             <h1 class="hero__titre"><?php bloginfo( 'name' ); ?></h1>
             <p class="hero__description">
 
@@ -23,12 +23,7 @@
                 s'inscrire
                 
             </div>
-            <div class="hero__icone">
-                <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="20" height="20">
-                <img src="https://s2.svgbox.net/social.svg?ic=snapchat&color=000000" width="20" height="20">
-            </div>
+            <?php get_template_part( 'gabarit/icone' ); ?>
         </div>
 
     </section>
