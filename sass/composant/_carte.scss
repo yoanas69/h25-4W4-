@@ -1,32 +1,37 @@
 /*----------------------- CARTE.SCSS-----------------------------*/
 .carte {
     display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #457dac45;
-  border-radius: 30px 30px 5px 5px;
-  flex: 0 1 250px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #457dac45;
+    border-radius: 30px 30px 5px 5px;
+    flex: 0 1 250px;
+
     &--grande {
         flex: 1 1 310px;
         min-height: 450px;
         overflow: hidden;
-        transition: scale 1s ease ;
-        
+        transition: scale 1s ease;
+
     }
-    &--grande:hover{
+
+    &--grande:hover {
         scale: 1.1;
         cursor: pointer;
     }
+
     &--grande:hover &__contenu {
         translate: 0px 98px;
 
-      
+
     }
-    &--grande-checkbox:checked + &--grande{
+
+    &--grande-checkbox:checked+&--grande {
         scale: 2;
         z-index: 10;
-        
+
     }
+
     &__image {
 
         img {
@@ -35,38 +40,52 @@
     }
 
     &__contenu {
-       
+
         min-height: 66%;
-    display: flex
-;
-    justify-content: flex-end;
-    gap: 4px;
-    background-color: #5bb0b3;
-    flex-direction: column;
-    /* overflow: hidden; */
-    transition: translate 1s ease;
-    align-items: center;
-        a{
+        display: flex;
+        justify-content: flex-end;
+        gap: 4px;
+        background-color: #5bb0b3;
+        flex-direction: column;
+        /* overflow: hidden; */
+        transition: translate 1s ease;
+        align-items: center;
+
+        a {
             text-decoration: none;
             color: #1f3444eb;
         }
-        .post-categories{
+
+        .post-categories {
             background-color: #e8fafda6;
-            width: 5vw;
+            width: 125px;
             border-radius: 30px;
             height: 26px;
-            display: flex ;
+            display: flex;
             justify-content: center;
             align-items: center;
             list-style: none;
             padding: inherit;
         }
     }
-    &__titre{
-       
+
+    &__titre {}
+
+    &__description {}
+
+    &__button {
+        &--actif {}
     }
-    &__description{}
-    &__button{
-        &--actif{}
+
+    &__temperature {
+        background-color: white;
+        max-width: 250px;
+        height: 42px;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5px;
+        align-items: center;
     }
 }

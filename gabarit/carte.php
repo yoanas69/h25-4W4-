@@ -31,7 +31,7 @@
         ?>
       </ul>
 
-      <p>Température moyenne : <?php the_field('temperature_moyene'); ?></p>
+      <p class="carte__temperature">Température moyenne : <?php the_field('temperature_moyene'); ?> °C</p>
     </div>
 
 </article>

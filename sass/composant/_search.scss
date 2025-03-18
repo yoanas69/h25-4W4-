@@ -1,0 +1,22 @@
+/*----------------------- search.SCSS-----------------------------*/
+.search_main{
+  
+}
+
+.search_section{
+    display: flex;
+    height: inherit;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+}
+.search_article{
+
+}
+.search_body{
+    height: 100vh;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: space-between;
+}
