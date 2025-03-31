@@ -20,6 +20,26 @@ Les variables
 /* /////////////////////////////////
 Les balise de bases
 //////////////////////////////////// */
+.section_404{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button_404{
+  background-color: yellow;
+  border: none;
+  border-radius: 3px;
+  /* width: 170px; */
+  height: 50px;
+  display: flex
+;
+  align-items: center;
+  a{
+      text-decoration: none;
+      color: #159ca6;
+      font-size: 23px;
+  }
+}
 body {
   font-size: 16px;
   overflow-x: hidden;

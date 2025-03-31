@@ -4,6 +4,7 @@
  $erreur_desc = get_theme_mod('erreur_desc', '');
  $color = get_theme_mod('hero_couleur', '#eeee22');
  $page_acceuil =  home_url();
+ 
  ?>
 
     <h1>-------- 404---------</h1>
