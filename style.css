@@ -21,9 +21,36 @@ Les variables
 Les balise de bases
 //////////////////////////////////// */
 .section_404{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex
+  ;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  h1,p{
+    background-color: #ffffff4a;
+}
+p{
+  font-size: 30px;
+  text-align: center;
+  max-width: 80vw;
+}
+nav{
+  ul{
+    gap: 10px;
+    display: flex
+;
+      li{
+          background-color: #568de699;
+          border-radius: 5px;
+          display: flex
+          ;
+          a{
+              color: black;
+              text-align: center;
+          }
+      }
+  }
+}
 }
 .button_404{
   background-color: yellow;

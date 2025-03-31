@@ -4,13 +4,11 @@
  $erreur_desc = get_theme_mod('erreur_desc', '');
  $color = get_theme_mod('hero_couleur', '#eeee22');
  $page_acceuil =  home_url();
- 
- ?>
 
-    <h1>-------- 404---------</h1>
+ ?>
     <section class="hero section_404" style="background-image: url(<?= $hero_erreur?>);">
         <h1 style = " color :<?= $color?> "> <?= $titre_erreur ?></h1>
-        <h3 style = " color :<?= $color?> "> <?= $erreur_desc ?></h3>
+        <p style = " color :<?= $color?> "> <?= $erreur_desc ?></p>
         <button>
             <a href="<?= $page_acceuil?>">
                 retour à l'acceuil
