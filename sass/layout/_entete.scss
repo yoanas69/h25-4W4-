@@ -2,14 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(201 226 247);
+    // background-color: rgb(201 226 247);
     padding: 0px 40px;
         &__span{
             font-size: 50px;
         }
     
     &__navigation{
-       
+       z-index: 50;
         display: flex;
         align-items: center;
         position: static;

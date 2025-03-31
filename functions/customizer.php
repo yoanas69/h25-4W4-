@@ -21,12 +21,18 @@ $wp_customize->add_setting('hero_background', array(
   'default' => '',
   'sanitize_callback' => 'esc_url_raw',
 ));
-
+$wp_customize->add_setting('hero_erreur', array(
+  'default' => '',
+  'sanitize_callback' => 'esc_url_raw',
+));
 $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background', array(
   'label' => __('Image arriere plan', 'theme_4w4'),
   'section' => 'hero_section',
 )));
-
+$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_erreur', array(
+  'label' => __('Image erreur', 'theme_4w4'),
+  'section' => 'hero_section',
+)));
 $wp_customize->add_setting('hero_couleur', array(
     'default' => '',
     'sanitize_callback' => 'esc_url_raw',

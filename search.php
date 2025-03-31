@@ -4,11 +4,14 @@
  */
 get_header();
 ?>
-<main class="site__main">
-    <section class="recherche__section">
+<body class="search_body">
+    
+
+<main class="site__main search_main">
+    <section class="recherche__section search_section">
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
-                <article>
+                <article class="search_article">
                     <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                     <p><?php echo wp_trim_words(get_the_excerpt(), 60); ?></p>
                     <hr>
@@ -19,4 +22,5 @@ get_header();
         <?php endif; ?>
     </section>
 </main>
+</body>
 <?php get_footer(); ?>

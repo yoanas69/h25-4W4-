@@ -17,7 +17,7 @@
             </div> 
             </div>
             <div class="piedpage__s1__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repellendus natus quia impedit obcaecati suscipit reiciendis maxime temporibus provident dolores, ducimus, eum quos a exercitationem! Placeat atque dicta eaque cumque.
+               projet de creation d'une page web pour un site de voyage
 
             </div>
         </section>

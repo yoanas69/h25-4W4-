@@ -1,7 +1,9 @@
 body{
   font-size : 16px;
   overflow-x: hidden;
-  background-image: url("images/bc.png");
+  // background-image: url("images/bc.png");
+  background: rgb(236,152,118);
+background: linear-gradient(0deg, rgba(236,152,118,1) 0%, rgba(125,125,245,1) 49%, rgba(0,212,255,1) 100%);
 }
 
 
