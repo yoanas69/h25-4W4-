@@ -29,7 +29,7 @@
             <input type="checkbox" id="entete__toggle" class="entete__toggle">
             <div class="entete__navigation">
                 <?php wp_nav_menu(array(
-                    'menu' => 'principal',
+                    'menu' => 'Navigation',
                     'container' => 'nav',
                     'container_class' => 'entete__menu'
                 )); ?>
