@@ -7,7 +7,10 @@
       $hero_background = get_theme_mod('hero_background', '');
       ?>;
      
-<section class="hero" style="background-image: url(<?= $hero_background ?>);">
+<section class="hero">
+        <div class="hero__carrousel" style="background-image: url(<?= $hero_background ?>);"></div>
+        <div class="hero__carrousel" style="background-image: url(<?= $hero_background ?>);"></div>
+        <div class="hero__carrousel" style="background-image: url(<?= $hero_background ?>);"></div>
 
         <div class="hero__contenu global" style="color : <?= $hero_icone; ?>">
             <h1 class="hero__titre"><?php bloginfo( 'name' ); ?></h1>
