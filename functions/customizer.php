@@ -10,9 +10,27 @@ $wp_customize->add_setting('hero_auteur', array(
   'default' => __('Yoan assan', 'theme_4w4'),
   'sanitize_callback' => 'sanitize_text_field'
 ));
+$wp_customize->add_setting('erreur_titre', array(
+  'default' => __('', 'theme_4w4'),
+  'sanitize_callback' => 'sanitize_text_field'
+));
+$wp_customize->add_setting('erreur_desc', array(
+  'default' => __('', 'theme_4w4'),
+  'sanitize_callback' => 'sanitize_text_field'
+));
 ////////////////////////////////////// ajout du control de la donne
 $wp_customize->add_control('hero_auteur', array(
   'label' => __('Auteur', 'theme_4w4'),
+  'section' => 'hero_section',
+  'type' => 'text',
+));
+$wp_customize->add_control('erreur_titre', array(
+  'label' => __('titre 404', 'theme_4w4'),
+  'section' => 'hero_section',
+  'type' => 'text',
+));
+$wp_customize->add_control('erreur_desc', array(
+  'label' => __('desc 404', 'theme_4w4'),
   'section' => 'hero_section',
   'type' => 'text',
 ));
