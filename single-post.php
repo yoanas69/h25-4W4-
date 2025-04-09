@@ -7,6 +7,10 @@
             ?>
                 <h2><?php the_title(); ?></h2>
                 <div><?php the_content() ?>
+                <?php the_category(); ?>
+                <?php  $tableau = get_the_category(); 
+                // print_r ($tableau);
+                ?>
                 <p class="carte__temperature"> Température maximum : <?php the_field('temperature_maximum'); ?> °C</p>
                 <p class="carte__temperature"> Température moyene : <?php the_field('temperature_moyene'); ?> °C</p>
                 <p class="carte__temperature"> Température minimum : <?php the_field('temperature_minimum'); ?> °C</p>
