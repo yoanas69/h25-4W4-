@@ -27,7 +27,7 @@ function parcourir_bouton(){
         .then(data => {
             const destinationList = document.querySelector('.destination__list');
             data.forEach((article, index) => {
-                const radioId = `bouton_radio_${index}`;  // Crée un id unique pour chaque radio
+                const radioId = `bouton_radio_${index}`; 
                 const articleElement = document.createElement('div');
             
                 articleElement.innerHTML = `
