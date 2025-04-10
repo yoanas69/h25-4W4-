@@ -14,10 +14,12 @@
             <?php endwhile; endif; ?>
         </div>
     </section>
+
     <section class="destination">
         <?php if (isset($destination)) {categories_liste($destination); }?>
         <h2 class="destination__titre">Articles de la catégorie</h2>
-        <div class="destination__list"></div>
+        <div class="destination__list">
+        </div>
     </section>
     </main>
     <footer></footer>

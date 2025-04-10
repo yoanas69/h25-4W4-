@@ -31,8 +31,18 @@ function parcourir_bouton(){
                 console.log(article.title.rendered)
                 // <div>${article.excerpt.rendered}</div>
                 articleElement.innerHTML = `
+                    <div class = "listToggle">
                     <h3>${article.title.rendered}</h3>
-                    <p>${article.excerpt.rendered}</p>
+                     <div class="destination__toggle">
+            <label for="bouton_radio">
+                    <span class="pPoint"></span>
+                    <span class="pPoint"></span>
+                    <span class="pPoint"></span>
+            </label>
+        </div>
+                    </div>
+                        <input id="bouton_radio" type="radio" class="bouton_radio">
+                    <p class = "arcActicle">${article.excerpt.rendered}</p>
                     <a href="${article.link}">Lire plus</a>
                 `;
                 destinationList .appendChild(articleElement);

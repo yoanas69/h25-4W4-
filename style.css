@@ -463,4 +463,55 @@ footer {
 }
 .piedpage__s1__description {
   max-width: 500px;
+}
+
+/*---------------------------------------destination*/
+.destination {
+  width: 95vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.destination .bouton_radio {
+  display: none;
+}
+.destination__list div .bouton_radio:checked ~ p {
+  height: 60px;
+}
+.destination__list div p {
+  overflow: hidden;
+  height: 0px;
+  width: 60vw;
+  display: block;
+  transition: height 2s;
+}
+.destination__list div .arcActicle {
+  display: none;
+}
+.destination__list div .listToggle {
+  display: flex;
+}
+.destination__toggle {
+  align-content: center;
+  margin: 15px;
+  margin-bottom: 5px;
+}
+.destination__toggle label {
+  background-color: gray;
+  border-radius: 7px;
+  display: flex;
+  width: 60px;
+  justify-content: center;
+  height: 20px;
+  width: 43px;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+.destination__toggle label .pPoint {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #130e0e;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

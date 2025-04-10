@@ -1,0 +1,63 @@
+/*---------------------------------------destination*/
+.destination {
+    width: 95vw;
+    display: flex
+;
+    justify-content: flex-start;
+    flex-direction: column;
+    .bouton_radio {
+        display: none;
+    }
+
+    &__list {
+        div {
+            .bouton_radio:checked ~ p {
+                height: 60px;
+            }
+            p {
+                
+                overflow: hidden;
+                height: 0px;
+                width: 60vw;
+                display: block;
+                transition: height 2s;
+            }
+
+            .arcActicle {
+                display: none;
+            }
+
+            .listToggle {
+                display: flex;
+            }
+        }
+    }
+
+    &__toggle {
+        align-content: center;
+        margin: 15px;
+        margin-bottom: 5px;
+
+        label {
+            background-color: gray;
+            border-radius: 7px;
+            display: flex;
+            width: 60px;
+            justify-content: center;
+            height: 20px;
+            width: 43px;
+            gap: 5px;
+            align-items: center;
+            cursor: pointer;
+
+            .pPoint {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background-color: #130e0e;
+                border-radius: 50%;
+            }
+        }
+    }
+
+}

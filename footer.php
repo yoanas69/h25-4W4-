@@ -18,7 +18,6 @@
             </div>
             <div class="piedpage__s1__description">
                projet de creation d'une page web pour un site de voyage
-
             </div>
         </section>
         <section class="piedpage__s2"></section>
