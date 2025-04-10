@@ -41,7 +41,7 @@ function parcourir_bouton(){
                             </label>
                         </div>
                     </div>
-                    <input id="${radioId}" type="radio" class="bouton_radio">
+                    <input id="${radioId}" type="radio" class="bouton_radio" name="bouton_radio">
                     <p class="arcActicle">${article.excerpt.rendered}</p>
                     <a href="${article.link}">Lire plus</a>
                 `;
