@@ -476,7 +476,7 @@ footer {
   display: none;
 }
 .destination__list div .bouton_radio:checked ~ p {
-  height: 60px;
+  height: 90px;
 }
 .destination__list div p {
   overflow: hidden;

@@ -26,23 +26,23 @@ function parcourir_bouton(){
         .then(response => response.json())
         .then(data => {
             const destinationList = document.querySelector('.destination__list');
-            data.forEach(article => {
+            data.forEach((article, index) => {
+                const radioId = `bouton_radio_${index}`;  // Crée un id unique pour chaque radio
                 const articleElement = document.createElement('div');
-                console.log(article.title.rendered)
-                // <div>${article.excerpt.rendered}</div>
+            
                 articleElement.innerHTML = `
-                    <div class = "listToggle">
-                    <h3>${article.title.rendered}</h3>
-                     <div class="destination__toggle">
-            <label for="bouton_radio">
-                    <span class="pPoint"></span>
-                    <span class="pPoint"></span>
-                    <span class="pPoint"></span>
-            </label>
-        </div>
+                    <div class="listToggle">
+                        <h3>${article.title.rendered}</h3>
+                        <div class="destination__toggle">
+                            <label for="${radioId}">
+                                <span class="pPoint"></span>
+                                <span class="pPoint"></span>
+                                <span class="pPoint"></span>
+                            </label>
+                        </div>
                     </div>
-                        <input id="bouton_radio" type="radio" class="bouton_radio">
-                    <p class = "arcActicle">${article.excerpt.rendered}</p>
+                    <input id="${radioId}" type="radio" class="bouton_radio">
+                    <p class="arcActicle">${article.excerpt.rendered}</p>
                     <a href="${article.link}">Lire plus</a>
                 `;
                 destinationList .appendChild(articleElement);
