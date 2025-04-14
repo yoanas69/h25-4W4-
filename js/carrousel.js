@@ -4,7 +4,20 @@
 })
 let carrousels = document.querySelectorAll('.hero__carrousel');
 let radios = document.querySelectorAll('.hero__radio__input');
-
+setInterval(incrementRadio,8000)
+function incrementRadio(){
+    if (!carrousels[1].classList.contains("active") && carrousels[2].classList.contains("active")) {
+      carrousels[0].classList.add("active");
+      carrousels[2].classList.remove("active");
+    } else if (!carrousels[2].classList.contains("active") && carrousels[0].classList.contains("active")) {
+      carrousels[1].classList.add("active");
+      carrousels[0].classList.remove("active");
+    } else {
+      carrousels[2].classList.add("active");
+      carrousels[0].classList.remove("active");
+      carrousels[1].classList.remove("active");
+    }
+  }
 radios.forEach(function(radio,index)
 {
     radio.addEventListener('change',function(){
