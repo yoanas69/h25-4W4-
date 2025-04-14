@@ -10,7 +10,10 @@
       ?>;
      
      <section class="hero">
-    <div class="hero__carrousel" style="background-image: url(<?= $hero_background ?>);"></div>
+     <input id="" type="radio" data-id_radio="0" class="hero__radio__input" name="carrousel">
+     <input id="" type="radio" data-id_radio="1" class="hero__radio__input" name="carrousel">
+     <input id="" type="radio" data-id_radio="2" class="hero__radio__input" name="carrousel">
+    <div class="hero__carrousel active" style="background-image: url(<?= $hero_background ?>);"></div>
     <div class="hero__carrousel" style="background-image: url(<?= $hero_background2 ?>);"></div>
     <div class="hero__carrousel" style="background-image: url(<?= $hero_background3 ?>);"></div>
 

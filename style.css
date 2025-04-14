@@ -20,55 +20,6 @@ Les variables
 /* /////////////////////////////////
 Les balise de bases
 //////////////////////////////////// */
-.section_404{
-  display: flex
-  ;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  h1,p{
-    background-color: #ffffff4a;
-}
-p{
-  font-size: 30px;
-  text-align: center;
-  max-width: 80vw;
-}
-nav{
-  ul{
-    gap: 10px;
-    display: flex
-;
-      li{
-          background-color: #568de699;
-          border-radius: 5px;
-          display: flex
-          ;
-          a{
-              color: black;
-              text-align: center;
-          }
-      }
-  }
-}
-}
-.button_404{
-  background-color: yellow;
-  border: none;
-  border-radius: 3px;
-  /* width: 170px; */
-  height: 50px;
-  display: flex
-;
-  align-items: center;
-  a{
-      text-decoration: none;
-      color: #159ca6;
-      font-size: 23px;
-  }
-}
-
-
 body {
   font-size: 16px;
   overflow-x: hidden;
@@ -437,7 +388,6 @@ main {
 }
 .hero {
   position: relative;
-  background-image: url("images/maldives.jpg");
   min-height: 100vh;
   background-size: cover;
 }
@@ -445,6 +395,18 @@ main {
   position: relative;
   z-index: 9;
   animation: none;
+}
+.hero__radio__input {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  z-index: 100;
+}
+.hero__radio__input:nth-of-type(1) {
+  left: 49%;
+}
+.hero__radio__input:nth-of-type(3) {
+  left: 51%;
 }
 .hero__inscrire {
   background-color: rgba(128, 128, 128, 0.79);
@@ -462,21 +424,13 @@ main {
   min-height: 100vh;
   width: 100%;
   background-size: inherit;
-  animation: carrouselAnimation 30s ease-in-out infinite;
   z-index: 1;
   opacity: 0;
+  transition: opacity 3s ease-in-out;
 }
 
-.hero__carrousel:nth-of-type(1) {
-  animation-delay: 5s;
-}
-
-.hero__carrousel:nth-of-type(2) {
-  animation-delay: 10s;
-}
-
-.hero__carrousel:nth-of-type(3) {
-  animation-delay: 15s;
+.active {
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------- layout du pied de page*/

@@ -11,13 +11,24 @@
 
 .hero{
     position: relative;
-    background-image: url("images/maldives.jpg");
     min-height: 100vh;
    background-size: cover;
    &__contenu{
     position: relative;
     z-index: 9;
     animation: none;
+   }
+   &__radio__input{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    z-index: 100;
+   }
+   &__radio__input:nth-of-type(1){
+    left: 49%;
+   }
+   &__radio__input:nth-of-type(3){
+    left: 51%;
    }
     &__inscrire{
         background-color: rgb(128 128 128 / 79%);
@@ -35,22 +46,27 @@
         min-height: 100vh;
         width: 100%;
         background-size: inherit;
-        animation: carrouselAnimation 30s ease-in-out infinite;
+        // animation: carrouselAnimation 30s ease-in-out infinite;
         z-index: 1;
         opacity: 0;
-        transition: opacity 3s
-        ;
+        transition: opacity 3s ease-in-out;
 
     }
 }
 .hero__carrousel:nth-of-type(1) {
-    animation-delay: 5s;
+    // animation-delay: 5s;
+
 }
 
 .hero__carrousel:nth-of-type(2) {
-    animation-delay: 10s; 
+    // animation-delay: 10s; 
+
 }
 
 .hero__carrousel:nth-of-type(3) {
-    animation-delay: 15s;
+    // animation-delay: 15s;
+
+}
+.active{
+    opacity: 1;
 }
