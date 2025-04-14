@@ -1,21 +1,30 @@
 /*---------------------------------------destination*/
 .destination {
     width: 95vw;
-    display: flex
-;
+    display: flex;
     justify-content: flex-start;
     flex-direction: column;
+
     .bouton_radio {
         display: none;
     }
 
     &__list {
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+
         div {
-            .bouton_radio:checked ~ p {
+            background-color: rgb(91 176 179 / 82%); 
+            border-radius: 25px;
+            width: 60vw;
+
+            .bouton_radio:checked~p {
                 height: 90px;
             }
+
             p {
-                
+
                 overflow: hidden;
                 height: 0px;
                 width: 60vw;
@@ -29,6 +38,7 @@
 
             .listToggle {
                 display: flex;
+                flex-wrap: wrap;
             }
         }
     }
