@@ -24,7 +24,8 @@ $wp_customize->add_setting('hero_grandeur_carrousel', array(
   'sanitize_callback' => 'sanitize_text_field'
 ));
 
-$hero_grandeur_carrousel = get_theme_mod('hero_grandeur_carrousel',1);
+
+
 ////////////////////////////////////// ajout du control de la donne
 $wp_customize->add_control('hero_auteur', array(
   'label' => __('Auteur', 'theme_4w4'),
@@ -45,38 +46,38 @@ $wp_customize->add_control('erreur_desc', array(
 $wp_customize->add_control('hero_grandeur_carrousel', array(
   'label' => __('Nombre image', 'theme_4w4'),
   'section' => 'hero_section',
-  'type' => 'text',
+  'type' => 'number',
 ));
 
 ////////////////////////background
-$wp_customize->add_setting('hero_background', array(
-  'default' => '',
-  'sanitize_callback' => 'esc_url_raw',
-));
-$wp_customize->add_setting('hero_background2', array(
-  'default' => '',
-  'sanitize_callback' => 'esc_url_raw',
-));
-$wp_customize->add_setting('hero_background3', array(
-  'default' => '',
-  'sanitize_callback' => 'esc_url_raw',
-));
+// $wp_customize->add_setting('hero_background', array(
+//   'default' => '',
+//   'sanitize_callback' => 'esc_url_raw',
+// ));
+// $wp_customize->add_setting('hero_background2', array(
+//   'default' => '',
+//   'sanitize_callback' => 'esc_url_raw',
+// ));
+// $wp_customize->add_setting('hero_background3', array(
+//   'default' => '',
+//   'sanitize_callback' => 'esc_url_raw',
+// ));
 $wp_customize->add_setting('hero_erreur', array(
   'default' => '',
   'sanitize_callback' => 'esc_url_raw',
 ));
-$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background', array(
-  'label' => __('Image arriere plan', 'theme_4w4'),
-  'section' => 'hero_section',
-)));
-$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background2', array(
-  'label' => __('Image arriere plan', 'theme_4w4'),
-  'section' => 'hero_section',
-)));
-$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background3', array(
-  'label' => __('Image arriere plan', 'theme_4w4'),
-  'section' => 'hero_section',
-)));
+// $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background', array(
+//   'label' => __('Image arriere plan', 'theme_4w4'),
+//   'section' => 'hero_section',
+// )));
+// $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background2', array(
+//   'label' => __('Image arriere plan', 'theme_4w4'),
+//   'section' => 'hero_section',
+// )));
+// $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background3', array(
+//   'label' => __('Image arriere plan', 'theme_4w4'),
+//   'section' => 'hero_section',
+// )));
 $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_erreur', array(
   'label' => __('Image erreur', 'theme_4w4'),
   'section' => 'hero_section',
@@ -91,8 +92,24 @@ $wp_customize->add_setting('hero_couleur', array(
     'section' => 'hero_section',
   )));
   
+// création des images auto
+$hero_grandeur_carrousel = get_theme_mod('hero_grandeur_carrousel', 1);
+for ($index = 1; $index <= $hero_grandeur_carrousel; $index++) {
+  $image_id = "hero_background_$index";
+
+  $wp_customize->add_setting($image_id, array(
+      'default' => '',
+      'sanitize_callback' => 'esc_url_raw',
+  ));
+
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $image_id, array(
+      'label' => sprintf(__('Image arrière-plan', 'theme_4w4'), $index),
+      'section' => 'hero_section',
+  )));
 
 }
+}
+
 
 
 add_action('customize_register', 'theme_4w4_customize_register');

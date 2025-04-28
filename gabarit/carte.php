@@ -28,7 +28,7 @@
                   echo '</a></li>'; 
                   echo '</ul>'; 
               } else {
-                echo '<ul class="post-categories" style = "display : none">';
+                echo '<ul class="post-categories" style = "display :">';
                 echo '<li><a href="' . esc_url(get_category_link($category->term_id)) . '" rel="category tag">';
                     echo esc_html($category->name);
                     echo '</a></li>'; 

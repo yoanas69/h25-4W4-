@@ -4,19 +4,31 @@
  */
 ?>
 
-<?php $hero_auteur = get_theme_mod('hero_auteur', 'Default Title');
-      $hero_background = get_theme_mod('hero_background', '');
-      $hero_background2 = get_theme_mod('hero_background2', '');
-      $hero_background3 = get_theme_mod('hero_background3', '');
-      ?>;
+<?php 
+$hero_auteur = get_theme_mod('hero_auteur', 'Default Title');
+$hero_grandeur_carrousel = get_theme_mod('hero_grandeur_carrousel', 1);
+?>
+
+<section class="hero">
+<div class="hero__label">
+    <?php for ($index = 0; $index < $hero_grandeur_carrousel; $index++): ?>
+        <label for="hero__radio__input_<?= $index ?>" class="rad__icon">
+            <span class="buttonR"></span>
+        </label>
+    <?php endfor; ?>
+</div>
+    <?php for ($index = 0; $index < $hero_grandeur_carrousel; $index++): ?>
      
-     <section class="hero">
-     <input id="" type="radio" data-id_radio="0" class="hero__radio__input" name="carrousel">
-     <input id="" type="radio" data-id_radio="1" class="hero__radio__input" name="carrousel">
-     <input id="" type="radio" data-id_radio="2" class="hero__radio__input" name="carrousel">
-    <div class="hero__carrousel active" style="background-image: url(<?= $hero_background ?>);"></div>
-    <div class="hero__carrousel" style="background-image: url(<?= $hero_background2 ?>);"></div>
-    <div class="hero__carrousel" style="background-image: url(<?= $hero_background3 ?>);"></div>
+        <input id="" type="radio" data-id_radio="<?= $index ?>" class="hero__radio__input" name="carrousel">
+    <?php endfor; ?>
+
+    <?php 
+    for ($index = 1; $index <= $hero_grandeur_carrousel; $index++):
+        $hero_background = get_theme_mod("hero_background_$index", '');
+    ?>
+        <div class="hero__carrousel<?= $index == 1 ? ' active' : '' ?>" style="background-image: url('<?= esc_url($hero_background) ?>');"></div>
+    <?php endfor; ?>
+</section>
 
     <div class="hero__contenu global" style="color : <?= $hero_icone; ?>">
         <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
