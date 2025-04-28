@@ -18,6 +18,13 @@ $wp_customize->add_setting('erreur_desc', array(
   'default' => __('', 'theme_4w4'),
   'sanitize_callback' => 'sanitize_text_field'
 ));
+
+$wp_customize->add_setting('hero_grandeur_carrousel', array(
+  'default' => __('', 'theme_4w4'),
+  'sanitize_callback' => 'sanitize_text_field'
+));
+
+$hero_grandeur_carrousel = get_theme_mod('hero_grandeur_carrousel',1);
 ////////////////////////////////////// ajout du control de la donne
 $wp_customize->add_control('hero_auteur', array(
   'label' => __('Auteur', 'theme_4w4'),
@@ -34,6 +41,13 @@ $wp_customize->add_control('erreur_desc', array(
   'section' => 'hero_section',
   'type' => 'text',
 ));
+
+$wp_customize->add_control('hero_grandeur_carrousel', array(
+  'label' => __('Nombre image', 'theme_4w4'),
+  'section' => 'hero_section',
+  'type' => 'text',
+));
+
 ////////////////////////background
 $wp_customize->add_setting('hero_background', array(
   'default' => '',
