@@ -7,6 +7,7 @@
     <title >Club de voyage</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <base href="<?php echo esc_url( home_url( '/' ) ); ?>">
 </head>
 
 <body>
