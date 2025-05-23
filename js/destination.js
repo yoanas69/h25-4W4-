@@ -29,8 +29,9 @@ function parcourir_bouton(){
             data.forEach((article, index) => {
                 const radioId = `bouton_radio_${index}`; 
                 const articleElement = document.createElement('div');
-            
+                const ListePays =["France", "États-Unis", "Canada", "Argentine", "Chili", "Belgique", "Maroc", "Mexique", "Japon", "Italie", "Islande", "Chine", "Grèce"]
                 articleElement.innerHTML = `
+                ${ListePays}
                     <div class="listToggle">
                         <h3>${article.title.rendered}</h3>
                         <div class="destination__toggle">
