@@ -390,6 +390,16 @@ main {
   position: relative;
   min-height: 100vh;
   background-size: cover;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column-reverse;
+}
+.hero__button {
+  display: flex;
+  gap: 33px;
+  top: 50%;
+  /* padding: 44%; */
+  padding: 5px 4px 80px 40%;
 }
 .hero__contenu {
   position: absolute;
@@ -398,22 +408,6 @@ main {
   top: 0;
 }
 .hero__radio__input {
-  display: none;
-}
-.hero__label {
-  display: flex;
-  gap: 1vw;
-  position: absolute;
-  bottom: 71px;
-  right: 50%;
-  z-index: 100;
-}
-.hero__label .buttonR {
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-color: gray;
-  border-radius: 3px;
   z-index: 100;
 }
 .hero__inscrire {

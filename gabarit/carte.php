@@ -18,8 +18,6 @@
       
       <?php
       $categories = get_the_category();
-      if ($categories) {
-        
           foreach ($categories as $category) {
             if ($category->name != "galerie" && $category->name != single_cat_title('', false)) {
             echo '<ul class="post-categories">';
@@ -28,7 +26,7 @@
                   echo '</a></li>'; 
                   echo '</ul>'; 
               } else {
-                echo '<ul class="post-categories" style = "display :">';
+                echo '<ul class="post-categories" style="display:none;">';
                 echo '<li><a href="' . esc_url(get_category_link($category->term_id)) . '" rel="category tag">';
                     echo esc_html($category->name);
                     echo '</a></li>'; 
@@ -36,8 +34,6 @@
               }
              
           }
-         
-      }
       ?>
 
       <p class="carte__temperature">Température moyenne : <?php the_field('temperature_moyene'); ?> °C</p>

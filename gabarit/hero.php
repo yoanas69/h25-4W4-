@@ -10,18 +10,12 @@ $hero_grandeur_carrousel = get_theme_mod('hero_grandeur_carrousel', 1);
 ?>
 
 <section class="hero">
-<div class="hero__label">
-    <?php for ($index = 0; $index < $hero_grandeur_carrousel; $index++): ?>
-        <label for="hero__radio__input_<?= $index ?>" class="rad__icon">
-            <span class="buttonR"></span>
-        </label>
-    <?php endfor; ?>
-</div>
+    <div class="hero__button">
     <?php for ($index = 0; $index < $hero_grandeur_carrousel; $index++): ?>
      
         <input id="" type="radio" data-id_radio="<?= $index ?>" class="hero__radio__input" name="carrousel">
     <?php endfor; ?>
-
+    </div>
     <?php 
     for ($index = 1; $index <= $hero_grandeur_carrousel; $index++):
         $hero_background = get_theme_mod("hero_background_$index", '');

@@ -12,7 +12,20 @@
 .hero{
     position: relative;
     min-height: 100vh;
-   background-size: cover;
+    background-size: cover;
+    display: flex
+;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+   &__button{
+    display: flex
+    ;
+        gap: 33px;
+        top: 50%;
+        /* padding: 44%; */
+        padding: 5px 4px 80px 40%;
+    }
+   
    &__contenu{
     position: absolute;
     z-index: 60;
@@ -20,35 +33,11 @@
     top: 0;
    }
    &__radio__input{
-    // position: absolute;
-    // left: 50%;
-    // bottom: 10%;
-    // z-index: 100;
-    display: none;
+    z-index: 100;
+  
    }
-//    &__radio__input:nth-of-type(1){
-//     left: 49%;
-//    }
-//    &__radio__input:nth-of-type(3){
-//     left: 51%;
-//    }
-&__label{
-    display: flex
-    ;
-    gap: 1vw;
-        position: absolute;
-        bottom: 71px;
-        right: 50%;
-        z-index: 100;
-    .buttonR{
-        display: block;
-        width: 10px; 
-        height: 10px;
-        background-color: gray; 
-        border-radius: 3px;
-        z-index: 100;
-    }
-}
+ 
+
 
     &__inscrire{
         background-color: rgb(128 128 128 / 79%);
